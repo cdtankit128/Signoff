@@ -4,7 +4,7 @@
 
 **SignOff** is an open-source, hybrid **proximity-based auto-lock system** for Windows. Built as a powerful alternative to Windows Dynamic Lock, it uses your Android smartphone as a digital presence beacon to automatically lock your Windows workstation the moment you step away from your desk.
 
-*Keywords: Windows auto lock, proximity lock, Bluetooth screen lock, Auto lock Windows using Android, Dynamic Lock alternative, BLE proximity, Spring Boot Websockets, automatic PC lock.*
+*Keywords: Windows auto lock, proximity lock, Bluetooth screen lock, Auto lock Windows using Android, Dynamic Lock alternative, BLE proximity, Spring Boot WebSockets, automatic PC lock, walk away screen lock, distance based computer lock, smart lock for PC, secure workstation automatically, lock screen automatically, PC auto locker, Android beacon lock, open source Dynamic lock, Windows Bluetooth detector, PC anti-theft, workstation security automation, hands-free computer lock, detect phone away lock PC.*
 
 ## 🚀 Features
 
