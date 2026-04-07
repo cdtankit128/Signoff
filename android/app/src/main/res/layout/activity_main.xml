@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0a0a0f"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="48dp"
+        android:src="@android:drawable/ic_lock_lock"
+        android:contentDescription="SignOff Logo"
+        android:tint="#6366f1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignOff"
+        android:textSize="32sp"
+        android:textColor="#f1f5f9"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximity Lock System"
+        android:textSize="14sp"
+        android:textColor="#64748b"
+        android:layout_marginTop="4dp"
+        android:letterSpacing="0.1" />
+        
+    <RadioGroup
+        android:id="@+id/rgMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/card_background"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/rbWifi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Wi-Fi Mode"
+            android:textColor="#f1f5f9"
+            android:checked="true"
+            android:buttonTint="#6366f1"/>
+
+        <RadioButton
+            android:id="@+id/rbBle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="BLE Hotspot"
+            android:textColor="#f1f5f9"
+            android:buttonTint="#6366f1"/>
+    </RadioGroup>
+
+    <!-- Server URL Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Server Address"
+        android:textColor="#94a3b8"
+        android:textSize="13sp"
+        android:layout_marginTop="48dp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.05" />
+
+    <EditText
+        android:id="@+id/etServerUrl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_background"
+        android:hint="ws://YOUR_IP_ADDRESS:8080/ws/websocket"
+        android:textColor="#f1f5f9"
+        android:textColorHint="#475569"
+        android:textSize="14sp"
+        android:inputType="textUri"
+        android:paddingHorizontal="16dp"
+        android:fontFamily="monospace"
+        android:singleLine="true" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚪ Not Connected"
+        android:textSize="16sp"
+        android:textColor="#64748b"
+        android:layout_marginTop="32dp" />
+
+    <!-- Motion Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOTION"
+                android:textColor="#64748b"
+                android:textSize="10sp"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tvMotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textColor="#f1f5f9"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEARTBEATS"
+                android:textColor="#64748b"
+                android:textSize="10sp"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tvHeartbeats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#f1f5f9"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Connect Button -->
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:text="▶ Connect &amp; Start"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:backgroundTint="#22c55e" />
+
+</LinearLayout>

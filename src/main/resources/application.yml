@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: signoff
+
+logging:
+  level:
+    org.springframework.web.socket: TRACE
+    org.springframework.messaging: TRACE
+
+# SignOff Configuration
+signoff:
+  heartbeat-timeout-ms: 5000
+  grace-period-ms: 3000
+  lock-cooldown-ms: 30000
+  motion-threshold: 2.0
+  heartbeat-interval-ms: 2000
