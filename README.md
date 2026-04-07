@@ -1,4 +1,4 @@
-# SignOff
+# SignOff - Smart Proximity-Based Auto-Lock for Windows 🔒
 
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg) ![Mobile](https://img.shields.io/badge/Companion_App-Android-green.svg) ![Language](https://img.shields.io/badge/Backend-Kotlin%20%7C%20Spring%20Boot-orange.svg) ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
@@ -14,6 +14,25 @@
 - **Zero-Config Auto-Discovery**: The Android app automatically discovers your laptop on the local network via UDP/TCP scanning—no need to manually type IP addresses.
 - **Smart Grace Periods**: Built-in algorithms prevent accidental locks by waiting for a configurable grace period, checking motion thresholds, and applying lock cooldowns.
 - **Real-Time Dashboard**: Includes a sleek, glassmorphic Web Dashboard served by the desktop app to monitor your phone's status, signal strength, and lock history in real-time.
+- **Power Efficient**: Designed to run with minimal battery impact on your Android device through optimized heartbeat intervals.
+
+## ❓ Why SignOff? (Comparison)
+
+| Feature | Windows Dynamic Lock | SignOff |
+|---------|-----------------------|---------|
+| **Connection** | Bluetooth Only | **Wi-Fi + BLE (Hybrid)** |
+| **Sensitivity** | Fixed (Often slow) | **Customizable Thresholds** |
+| **Motion Detection** | No | **Yes (Accelerometer Aware)** |
+| **Dashboard** | None | **Live Web UI** |
+| **Reliability** | Fails on some adapters | **Multiple Fallback Modes** |
+
+## 🎯 Use Cases
+
+- **Office Security**: Automatically lock your PC when you grab your phone to go for a coffee or meeting.
+- **Privacy at Home**: Keep your workstation private from roommates or family without having to remember to lock it every time.
+- **Public Spaces**: An extra layer of security when working in cafes or libraries.
+- **Developer Workflows**: Seamless security that doesn't get in your way.
+
 
 ## 🛠️ Technology Stack
 
@@ -69,6 +88,15 @@ cd android
 ./gradlew assembleDebug
 ```
 Install the resulting APK onto your Android device. Make sure to grant the necessary notifications, background activity, and Bluetooth permissions!
+
+## 🤝 Contributing
+
+Contributions are welcome! Whether it's reporting a bug, suggesting a feature, or submitting a Pull Request:
+1. Fork the project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
 ## 📜 License
 
