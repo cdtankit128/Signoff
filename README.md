@@ -1,6 +1,10 @@
 # SignOff
 
-SignOff is an intelligent, hybrid proximity-based auto-lock system. It uses your smartphone as a digital presence beacon to automatically lock your Windows workstation the moment you step away from your desk.
+![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg) ![Mobile](https://img.shields.io/badge/Companion_App-Android-green.svg) ![Language](https://img.shields.io/badge/Backend-Kotlin%20%7C%20Spring%20Boot-orange.svg) ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+
+**SignOff** is an open-source, hybrid **proximity-based auto-lock system** for Windows. Built as a powerful alternative to Windows Dynamic Lock, it uses your Android smartphone as a digital presence beacon to automatically lock your Windows workstation the moment you step away from your desk.
+
+*Keywords: Windows auto lock, proximity lock, Bluetooth screen lock, Auto lock Windows using Android, Dynamic Lock alternative, BLE proximity, Spring Boot Websockets, automatic PC lock.*
 
 ## 🚀 Features
 
